@@ -1,0 +1,65 @@
+.contact-form {
+    padding: 5px;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    margin-top: 25px;
+    background-color: aqua;
+    
+    
+    
+}
+
+
+
+.form-input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.form-input > label {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.inputFile-text{
+    padding: 10px;
+    border: none;
+    background-color: aqua;
+    border-bottom: 1px solid darkgreen;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.inputFile-textarea {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid darkgreen;
+    background-color: aqua;
+
+}
+
+.botton-submit{
+    margin-top: 10px;
+    background-color: darkblue;
+    border-radius: 20px;
+    border: none;
+    color: azure;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+   
+
+}

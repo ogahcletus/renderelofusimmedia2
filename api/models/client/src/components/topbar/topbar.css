@@ -1,0 +1,82 @@
+.top {
+  width: 100%;
+  z-index: 999;
+  width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    color: whitesmoke;
+    position:sticky;
+    top: 1px;
+    display:flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.topLeft {
+  flex: 3;
+    background-color: transparent;
+    color: white;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.topRight {
+  flex: 3;
+  background-color: transparent;
+  color: gold;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topCenter {
+  flex : 8;
+  background-color: transparent;
+  color: gold;
+  font-size: 30px;
+    
+}
+
+.topIcon {
+  color:gold;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.topImg {
+  width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.topList {
+  display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.topListItem {
+  margin-right: 20px;
+  font-weight: 700px;
+  cursor: pointer;
+}
+
+.topSearchIcon {
+  font-size: 30px ;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
