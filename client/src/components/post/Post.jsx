@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import React from 'react';
 
 export default function Post({ post }) {
-  const PF = "http://localhost:5000/images/";
+  const PF = "https://elofusimmedia-api.adaptable.app/images"
+ // const PF = "http://localhost:5000/images/";
     
 
   return (

@@ -4,9 +4,11 @@ import { Context } from "../../context/Context";
 import "./topbar.css";
 import React from 'react';
 
+const adaptableUrl = "https://elofusimmedia-api.adaptable.app/api";
+
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://elofusimmedia-api.adaptable.app/images/"
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });

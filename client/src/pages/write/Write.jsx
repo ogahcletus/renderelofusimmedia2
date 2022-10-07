@@ -5,6 +5,8 @@ import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
 
+const adaptableUrl = "https://elofusimmedia-api.adaptable.app/api";
+
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -25,12 +27,12 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("/upload", data);
+        await axios.post(adaptableUrl + "/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post("/posts", newPost);
-      window.location.replace("/post/" + res.data._id);
+      const res = await axios.post(adaptableUrl + "/posts", newPost);
+      window.location.replace(adaptableUrl + "/post/" + res.data._id);
     } catch (err) {}
   };
   return (

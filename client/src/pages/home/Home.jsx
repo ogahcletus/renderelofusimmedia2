@@ -8,13 +8,15 @@ import React from 'react';
 import axios from "axios";
 import { useLocation } from "react-router";
 
+const adaptableUrl = "https://elofusimmedia-api.adaptable.app/api";
+
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts" + search)
+      const res = await axios.get(adaptableUrl + "/posts" + search)
       
       
       setPosts(res.data);

@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import "./sidebar.css";
 import React from 'react';
 
+const adaptableUrl = "https://elofusimmedia-api.adaptable.app/api";
+
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
 
   useEffect(() => {
     const getCats = async () => {
-      const res = await axios.get("/categories");
+      const res = await axios.get(adaptableUrl + "/categories");
       setCats(res.data);
     };
     getCats();
